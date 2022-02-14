@@ -12,7 +12,10 @@
 */
 
 //CODE HERE
-
+function helloWorld(){
+  console.log('hello world')
+}
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 
@@ -21,8 +24,13 @@
 */
 
 //CODE HERE
+const jsNinja = () => {
+let message = 'I am a javascript ninja'
+  return message  
+}
 
-
+let ninja = jsNinja()
+console.log(ninja)
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -31,6 +39,10 @@
 */
 
 //CODE HERE
+function printName(name){
+  console.log(name)
+}
+printName('cameron')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -45,6 +57,11 @@
 */
 
 //CODE HERE
+function greeting(name){
+  String(name)
+  console.log(`Hello, ${name}`)
+}
+greeting('bobby')
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -59,7 +76,17 @@
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => {
+    if(num1 > num2){
+    return num1
+    }else if(num1 < num2){
+  return num2
+    }else{
+    return num1
+    }
+}
+let biggerNumber = compareNums(5, 5)
+console.log(biggerNumber)
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -70,7 +97,13 @@
 */
 
 //CODE HERE
-
+function add(num1, num2){
+  Number(num1)
+  Number(num2)
+  return num1 + num2
+}
+let sum = add(2, 6)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -85,7 +118,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+expression
 
 
 
@@ -110,8 +143,9 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
-
+const exclaim3 = (str) => str.toUpperCase() + '!!!'
+let yolo = exclaim3('yolo')
+console.log(yolo)
 
 ////////////////// PROBLEM 9 ////////////////////
 
